@@ -4,6 +4,12 @@ A React Native counter with two swappable implementations — one built entirely
 
 ---
 
+## Screenshots
+
+<!-- Replace the URL below with your actual screenshot -->
+![App Screenshot](https://drive.google.com/file/d/1w_AAZgrYJnddcZGqAQM5zOLsiIgeYrE_/view?usp=sharing)
+
+---
 ## How the logic is structured
 
 The app is split into three layers.
@@ -193,12 +199,6 @@ The native side checks `_hasListeners` / `listenerCount > 0` before emitting, so
 
 ---
 
-## Screenshots
-
-<!-- Replace the URL below with your actual screenshot -->
-![App Screenshot](https://your-screenshot-url-here)
-
----
 
 ## Running the app
 
