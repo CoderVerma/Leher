@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
-import {useCounter} from '../hooks/useCounter';
-import {useNativeCounter} from '../hooks/useNativeCounter';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { useCounter } from '../hooks/useCounter';
+import { useNativeCounter } from '../hooks/useNativeCounter';
 import CounterView from '../components/CounterView';
 
 function JsCounterContainer() {
@@ -23,8 +23,11 @@ export default function CounterScreen() {
         <TouchableOpacity
           style={[styles.toggleBtn, !useNative && styles.toggleBtnActive]}
           onPress={() => setUseNative(false)}
-          activeOpacity={0.75}>
-          <Text style={[styles.toggleLabel, !useNative && styles.toggleLabelActive]}>
+          activeOpacity={0.75}
+        >
+          <Text
+            style={[styles.toggleLabel, !useNative && styles.toggleLabelActive]}
+          >
             JS
           </Text>
         </TouchableOpacity>
@@ -34,18 +37,15 @@ export default function CounterScreen() {
         <TouchableOpacity
           style={[styles.toggleBtn, useNative && styles.toggleBtnActive]}
           onPress={() => setUseNative(true)}
-          activeOpacity={0.75}>
-          <Text style={[styles.toggleLabel, useNative && styles.toggleLabelActive]}>
+          activeOpacity={0.75}
+        >
+          <Text
+            style={[styles.toggleLabel, useNative && styles.toggleLabelActive]}
+          >
             Native (C++)
           </Text>
         </TouchableOpacity>
       </View>
-
-      <Text style={styles.modeCaption}>
-        {useNative
-          ? 'State lives in C++ · JSI sync calls · events via NativeEventEmitter'
-          : 'State lives in JS · React hooks · no native layer'}
-      </Text>
 
       {useNative ? <NativeCounterContainer /> : <JsCounterContainer />}
     </View>

@@ -1,8 +1,8 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import CounterButton from './CounterButton';
 import CounterHistory from './CounterHistory';
-import {BONUS_EVERY_N} from '../constants/counter';
+import { BONUS_EVERY_N } from '../constants/counter';
 
 export type CounterViewProps = {
   count: number;
@@ -43,7 +43,6 @@ function CounterView({
 
   return (
     <View style={styles.root}>
-      <Text style={styles.label}>Counter</Text>
       <Text style={styles.counter}>{count}</Text>
       <Text style={styles.hint}>{hint}</Text>
 
