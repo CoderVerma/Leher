@@ -193,6 +193,13 @@ The native side checks `_hasListeners` / `listenerCount > 0` before emitting, so
 
 ---
 
+## Screenshots
+
+<!-- Replace the URL below with your actual screenshot -->
+![App Screenshot](https://your-screenshot-url-here)
+
+---
+
 ## Running the app
 
 > Ensure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide first.
