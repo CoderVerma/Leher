@@ -6,8 +6,8 @@ A React Native counter with two swappable implementations — one built entirely
 
 ## Screenshots
 
-<!-- Replace the URL below with your actual screenshot -->
-![App Screenshot](https://drive.google.com/file/d/1w_AAZgrYJnddcZGqAQM5zOLsiIgeYrE_/view?usp=sharing)
+<!-- Drop your screenshot at assets/screenshot.png and it will render here -->
+![App Screenshot](assets/screenshot.jpg)
 
 ---
 ## How the logic is structured
